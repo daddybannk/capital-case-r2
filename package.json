@@ -1,0 +1,19 @@
+{
+  "name": "capital-case-r2",
+  "version": "1.0.0",
+  "description": "Additional JS `String.prototype` function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Sahachai Y.",
+  "license": "ISC",
+  "keywords": [
+    "string",
+    "capital-case"
+  ],
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7"
+  }
+}
