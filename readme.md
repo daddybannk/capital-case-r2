@@ -21,5 +21,5 @@ const str = "This word is UPPER CASE.";
 console.log(str.toCapitalCase()); // "This Word Is UPPER CASE."
 
 // ignoreCase = false
-console.log(str2.toCapitalCase(false)); // "This Word Is Upper Case."
+console.log(str.toCapitalCase(false)); // "This Word Is Upper Case."
 ```
