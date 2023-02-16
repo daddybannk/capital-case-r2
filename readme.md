@@ -23,3 +23,14 @@ console.log(str.toCapitalCase()); // "This Word Is UPPER CASE."
 // ignoreCase = false
 console.log(str.toCapitalCase(false)); // "This Word Is Upper Case."
 ```
+
+## Test
+
+```
+npm install --only=dev
+npm run test
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
