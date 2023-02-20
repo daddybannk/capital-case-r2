@@ -2,18 +2,27 @@
   "name": "capital-case-r2",
   "version": "1.0.0",
   "description": "Additional JS `String.prototype` function.",
-  "main": "index.js",
+  "main": "dist/capitalcase.js",
   "scripts": {
-    "test": "mocha"
+    "clean": "rm -rf node_modules",
+    "test": "mocha",
+    "build": "webpack --config webpack.config.js --mode=production"
   },
   "author": "Sahachai Y.",
-  "license": "ISC",
+  "license": "MIT",
+  "files": [
+    "test/**/*",
+    "dist/**/*",
+    "src/**/*"
+  ],
   "keywords": [
     "string",
     "capital-case"
   ],
   "devDependencies": {
     "mocha": "^10.2.0",
-    "chai": "^4.3.7"
+    "chai": "^4.3.7",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }

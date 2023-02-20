@@ -1,7 +1,7 @@
 var chai = require("chai");  
 var expect = chai.expect;
 
-require("../index");
+require("../src/index");
 
 describe("capital-case-r2", function() {
   describe("Function `String.prototype.toCapitalCase(ignoreCase)`", function() {

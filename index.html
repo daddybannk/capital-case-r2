@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>capital-case-r2</title>
+    </head>
+    <body>
+        <h1>capital-case-r2</h1>
+        <p>
+            <p>Ignore Case</p>
+            <input type="radio" id="ignoretrue" name="ignore" value="true" checked onchange="convertToCapital()">
+            <label for="ignoretrue">True</label><br>
+            <input type="radio" id="ignorefalse" name="ignore" value="false" onchange="convertToCapital()">
+            <label for="ignorefalse">False</label><br>
+        </p>
+        <p>
+            <label for="mytext">Text here to convert <code>toCapitalString()</code></label><br/>
+<textarea id="mytext" name="mytext" rows="5" cols="50" onkeyup="convertToCapital()"></textarea>
+        </p>
+        <p id="result" style="white-space: pre-line;"></p>
+
+        <script src="dist/capitalcase.js"></script>
+        <script type="text/javascript">
+            function convertToCapital() {
+                const ignore = document.getElementById("ignoretrue").checked;
+                const text = document.getElementById("mytext").value;
+                if (typeof text == "string") {
+                    let newText = text.toCapitalCase(ignore);
+                    document.getElementById("result").innerHTML = newText;
+                }
+            }
+            convertToCapital();
+        </script>
+    </body>
+</html>

@@ -2,6 +2,10 @@
 
 Additional JS `String.prototype` method.
 
+## Try it
+
+https://daddybannk.github.io/capital-case-r2
+
 ## Installation
 
 ```

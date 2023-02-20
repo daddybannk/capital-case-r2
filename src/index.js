@@ -1,4 +1,4 @@
-String.prototype.toCapitalCase = function toCapitalCase(ignoreCase = true) {
+String.prototype.toCapitalCase = function(ignoreCase = true) {
     function isCharacter(text) {
     	return text.search(/[^a-zA-Z]+/) === -1;
     }
